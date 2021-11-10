@@ -316,7 +316,7 @@ class TransactionService {
          * Categorize the transaction based on the current location
          */
         if (tr.name === NAME_UNKNOWN) {
-          tr.name = slugifyUrl(currentUrl)
+          tr.name = slugifyUrl(currentUrl, 3)
         }
 
         captureNavigation(tr)
